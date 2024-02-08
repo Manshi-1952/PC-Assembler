@@ -1,12 +1,7 @@
 :root{
-    --other-font: 'Sacramento', cursive;
-    --pri-font: 'Aboreto';
-    --sec-font: 'Gotu';
+    --pri-font: 'Mulish', sans-serif;
+    --sec-font: 'Space Mono', monospace;
 
-    --dark-purple: #3E206D;
-    --neutral-purple: #916DD5;
-    --pinkish-purple: #D89CF6;
-    --light-purple: #F0E3FF;
 }
 
 *{
