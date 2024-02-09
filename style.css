@@ -42,34 +42,6 @@
     transition: 100ms ease-in;
 }
 
-/* .link {
-    font-size: 1.1rem;
-    text-decoration: none;
-    color: white;
-    font-family: var(--pri-font);
-} */
-
-/* .links li:not(:last-child){
-    border: 1px solid black;
-    padding: 12px;
-    border-radius: 25px;
-    background: black;
-    color: white;
-} */
-
-/* .links > li:hover:not(:last-child){
-    font-size: 1.1rem;
-    text-decoration: none;
-    font-family: var(--pri-font);
-    transform: translateX(-3px);
-    transform: translateY(4px);
-    border: 1px solid white;
-    padding : 12px;
-    border-radius: 25px;
-    background: white;
-    color: black;
-} */
-
 
 .navbar > a {
     display: flex;
@@ -84,12 +56,20 @@
     gap: 35px;
 }
 
-/* .navbar .links a {
-    font-weight: 500;
-    text-decoration: none;
-    padding: 10px 0;
-    transition: 1s ease;
-} */
+.hero  h2{
+    font-family: var(--pri-font);
+    letter-spacing: 10px;
+    color: black;    
+    font-size: 3.5em;
+    padding-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-family: var(--sec-font);
+}
 
 .hero-sec {
     display: flex;
@@ -101,28 +81,20 @@
     margin: 0 auto;
 }
 
-.hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
 
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.hero-section .buttons {
+/* .hero-section .buttons a{
     margin-top: 40px;
-}
+    text-align: none;
+} */
 
-.hero-section .buttons a {
+/* .hero-section .buttons a {
     text-decoration: none;
     padding: 12px 24px;
     border-radius: 0.375rem;
     font-weight: 600;
     transition: 0.2s ease;
     display: inline-block;
-}
+} */
 
 .hero-sec .hero {
     max-width: 50%;
