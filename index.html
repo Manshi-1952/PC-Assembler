@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@900&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/logo-taskbar.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&family=Space+Mono&display=swap" rel="stylesheet">
     <title>Custom PC</title>
+    <style>
+        body{
+            background: rgb(132,214,255);
+            background: linear-gradient(50deg, rgba(132,214,255,1) 30%, rgba(230,116,249,1) 100%);
+            background-repeat: no-repeat;
+            height: 100dvh;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
-        <a href="index.html"><img src="assets/logo-taskbar.png" alt="" width="35em">Custom PC</a>
+        <a href="index.html"><img src="assets/logo-taskbar.png" alt="" width="35em"> &nbsp;&nbsp;Custom PC</a>
         <input type="checkbox" id="menu-toggle" />
         <label for="menu-toggle" id="hamburger-btn">
           <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
@@ -17,22 +26,22 @@
           </svg>
         </label>
         <ul class="links">
-            <li><a href="index.html">BUILD PC</a></li>
-            <li><a href="prebuilt.html">PRE-BUILT</a></li>
-            <li><a href="laptop.html">LAPTOP</a></li>
-            <li><a href="cart.html"><img src="assets/cart.png" alt="cart" width="35em"></a></li>
+            <li><a class="link" href="prebuilt.html">PRE-BUILT</a></li>
+            <li><a class="link" href="index.html">BUILD PC</a></li>
+            <li><a class="link" href="laptop.html">LAPTOP</a></li>
+            <li><a href="cart.html"><img src="assets/cart.png" alt="cart" width="25em"></a></li>
         </ul>
     </nav>
     <section class="hero-sec">
         <div class="hero">
             <h2>CUSTOM PC</h2>
-            <p>A simple PC builder tool for Indian users. Select parts from the curated list of components, to build your desktop computer in a few minutes. Whether you're building a general purpose computer or a gaming rig or a PC for photo/video editing, this little tool is going to save you some time and effort.</p>
+            <p style="text-align: justify;">A simple PC builder tool for Indian users. Select parts from the curated list of components, to build your desktop computer in a few minutes. Whether you're building a general purpose computer or a gaming rig or a PC for photo/video editing, this little tool is going to save you some time and effort.</p>
             <div class="buttons">
                 <a href="#" class="join">Join Now</a>
             </div>
         </div>
         <div class="img">
-            <img src="assets/bg-main.png" alt="background-image">
+            <img src="assets/bg-main.png" alt="background-image" style="">
         </div>
     </section> 
 </body>
