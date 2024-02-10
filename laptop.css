@@ -120,6 +120,41 @@
     }
 }
 
+@media screen and (max-width: 521px) {
+    .navbar .logo a {
+        font-size: 1.2rem;
+    }
+
+    .links {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        padding: 15px;
+        backdrop-filter: blur(5px);
+        flex-direction: column;
+        transition: 0.3s ease;
+    }
+
+    .navbar #menu-toggle:checked~.links {
+        top: 75px;
+    }
+
+    .navbar #hamburger-btn {
+        display: block;
+    }
+
+    .product-1, .product-2, .product-3, .product-4, .product-5, .product-6, .product-7, .product-8, .product-9, .product-10{
+        display: block;
+        padding: 20px 0;
+    }
+
+    .col-1 img{
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 426px) {
     .navbar .logo a {
         font-size: 1.2rem;
@@ -144,4 +179,5 @@
     .navbar #hamburger-btn {
         display: block;
     }
+
 }
