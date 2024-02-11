@@ -1,0 +1,119 @@
+:root{
+    --pri-font: 'Mulish', sans-serif;
+    --sec-font: 'Space Mono', monospace;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+
+.navbar > a:first-child{
+    text-decoration: none;
+    font-family: var(--pri-font);
+    color: black;
+}
+
+.links .link{
+    color: black;
+    font-family: var(--pri-font);
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: .9rem;
+}
+
+.links .link:hover{
+    color: white;
+    background: black;
+    transition: 100ms ease-in;
+}
+
+.navbar > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 35px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#hamburger-btn {
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none;
+    order: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar .logo a {
+        font-size: 1.2rem;
+    }
+
+    .links {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        padding: 15px;
+        backdrop-filter: blur(5px);
+        flex-direction: column;
+        transition: 0.3s ease;
+    }
+
+    .navbar #menu-toggle:checked~.links {
+        top: 75px;
+    }
+
+    .navbar #hamburger-btn {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .navbar .logo a {
+        font-size: 1.2rem;
+    }
+
+    .links {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        padding: 15px;
+        backdrop-filter: blur(5px);
+        flex-direction: column;
+        transition: 0.3s ease;
+    }
+
+    .navbar #menu-toggle:checked~.links {
+        top: 75px;
+    }
+
+    .navbar #hamburger-btn {
+        display: block;
+    }
+}
