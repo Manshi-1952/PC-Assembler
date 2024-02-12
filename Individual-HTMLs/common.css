@@ -7,8 +7,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* background: white; */
+    font-family: var(--pri-font);
 }
 /* 
 body{
@@ -86,6 +87,7 @@ body{
 }
 
 .col-1 img {
+    margin-top: 23%;
     width: 100%; /* Make the image fill its container */
 }
 
@@ -94,10 +96,78 @@ body{
     top: 0;
     height: fit-content; 
     padding: 20px;
+    /* background: lightcoral; */
 }
 
 .col-2 {
     padding: 20px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.product-btn{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 25px;
+    color: black;
+    padding: 10px 20px;
+}
+
+.sml-container{
+    padding: 5px;
+}
+
+.sml-container > p:first-child{
+    padding: 10px 0;
+    font-weight: 900;
+    font-family: var(--pri-font);
+}
+
+.sml-container > p:last-child{
+    text-align: justify;
+    font-family: var(--pri-font);
+}
+
+.row-1, .row-2, .row-3, .row-4{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.rating{
+    padding: 10px 0;
+}
+
+.price{
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+h2{
+    padding: 20px 0;
+}
+
+table{
+    border: 1px solid grey;
+    text-align: left;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+table td, th{
+    padding: 8px;
+}
+
+.t-head{
+    padding: 8px;
+    color: red;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    border-collapse: collapse;
 }
 
 @media screen and (max-width: 768px) {
@@ -106,12 +176,49 @@ body{
     }
 
     .col-1 img {
-        width: 50%; /* Make the image fill its container */
+        margin-top: 0;
+        width: 40%; /* Make the image fill its container */
     }
 
     .col-1,
     .col-2 {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .main-section {
+        flex-direction: column;
+    }
+
+    .col-1 img {
+        margin-top: 0;
+        width: 80%; /* Make the image fill its container */
+    }
+
+    .col-1,
+    .col-2 {
+        width: 100%;
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .product-btn{
+        text-decoration: none;
+        border: 1px solid black;
+        border-radius: 25px;
+        color: black;
+        padding: 5px 10px;
+    }
+
+    .highlights{
+        border: 1px solid red;
+        width: 50%;
+        height: 50%;
     }
 }
 
