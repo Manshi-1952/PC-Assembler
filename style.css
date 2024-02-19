@@ -120,6 +120,7 @@
         font-size: 1.2rem;
     }
 
+
     .links {
         position: fixed;
         top: -100%;
@@ -128,12 +129,14 @@
         height: fit-content;
         padding: 15px;
         backdrop-filter: blur(5px);
+        background-color: rgba(169, 169, 169, 0.6);
         flex-direction: column;
         transition: 0.3s ease;
     }
 
     .navbar #menu-toggle:checked~.links {
         top: 75px;
+        z-index: 999;
     }
 
     .navbar #hamburger-btn {
